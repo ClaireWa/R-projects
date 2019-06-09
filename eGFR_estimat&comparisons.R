@@ -48,7 +48,7 @@ egfr.ckdepi <- function(scr, age, sex, ethnic) {
 # Part B
 
 # import scr2.csv dataset 
-scr2.dt <- data.table(read_csv("Biomedical Data Science/assessment1/scr2.csv"), stringsAsFactors = TRUE)
+scr2.dt <- data.table(read_csv("scr2.csv"), stringsAsFactors = TRUE)
 
 # check for missing data
 table(is.na(scr2.dt))
