@@ -3,9 +3,9 @@ library(data.table)
 
 # Part A
 # load in the three files provided on learn as data tables
-cohort <- data.table(read_csv("Biomedical Data Science/assessment1/cohort.csv"))
-lab1 <- data.table(read_csv("Biomedical Data Science/assessment1/lab1.csv"))
-linker <- data.table(read_csv("Biomedical Data Science/assessment1/linker.csv"))
+cohort <- data.table(read_csv("cohort.csv"))
+lab1 <- data.table(read_csv("lab1.csv"))
+linker <- data.table(read_csv("linker.csv"))
 
 # merge the three files into one data table
 cohort.dt <- merge(lab1, linker, by.x="LABID", by.y="LABID", all= TRUE)
