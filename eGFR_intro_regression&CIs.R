@@ -3,8 +3,8 @@ library(data.table)
 
 # Part A
 # load in the files provided on learn as data tables
-l1.dt <- data.table(read_csv("Biomedical Data Science/assessment1/ltegfr1.csv"))
-l2.dt <- data.table(read_csv("Biomedical Data Science/assessment1/ltegfr2.csv"))
+l1.dt <- data.table(read_csv("ltegfr1.csv"))
+l2.dt <- data.table(read_csv("ltegfr2.csv"))
 
 # check intersection between identifiers
 length(intersect(l1.dt$id, l2.dt$ID))
